@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.1.5">
+ </head>
+ <body>
+  <vaadin-panel size-full>
+   <vaadin-vertical-layout size-auto>
+    <vaadin-form-layout size-auto margin-left margin-top="false" margin-bottom="false">
+     <vaadin-label plain-text _id="lista_reproducion">
+       Listas de reproducion 
+     </vaadin-label>
+     <vaadin-horizontal-layout>
+      <vaadin-text-field placeholder="Buscar lista" _id="buscarLista" :right></vaadin-text-field>
+      <vaadin-button plain-text _id="buscar" :right>
+        Buscar 
+      </vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-form-layout>
+    <vaadin-form-layout spacing="false" size-auto margin="false" _id="listaLayout">
+     <vaadin-vertical-layout spacing="false" size-auto margin="false" _id="vertical">
+      <vaadin-horizontal-layout spacing="false" _id="horizontal">
+       <vaadin-form-layout spacing="false" size-auto margin="false" _id="form">
+        <vaadin-button style-name="huge primary" width="200px" height="100px" plain-text _id="botonPrincipal">
+          Lista 1 
+        </vaadin-button>
+        <vaadin-label plain-text _id="nombreLista">
+          Lista 1 
+        </vaadin-label>
+       </vaadin-form-layout>
+       <vaadin-vertical-layout size-auto margin="false">
+        <vaadin-button plain-text _id="modificar">
+          Modficar 
+        </vaadin-button>
+        <vaadin-button plain-text _id="eliminar">
+          Eliminar 
+        </vaadin-button>
+       </vaadin-vertical-layout>
+      </vaadin-horizontal-layout>
+     </vaadin-vertical-layout>
+    </vaadin-form-layout>
+   </vaadin-vertical-layout>
+  </vaadin-panel>
+ </body>
+</html>

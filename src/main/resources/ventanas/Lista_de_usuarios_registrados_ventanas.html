@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+  <meta name="package-mapping" content="ventanas:ventanas">
+ </head>
+ <body>
+  <vaadin-vertical-layout>
+   <vaadin-form-layout size-auto :center>
+    <vaadin-label plain-text _id="lista_usuarios">
+      Lista usuarios: 
+    </vaadin-label>
+    <vaadin-horizontal-layout>
+     <vaadin-text-field placeholder="Buscar usuario" _id="texfielBuscador"></vaadin-text-field>
+     <vaadin-button plain-text _id="buscar">
+       Buscar 
+     </vaadin-button>
+    </vaadin-horizontal-layout>
+    <vaadin-panel width-auto height="400px">
+     <vaadin-form-layout size-auto margin _id="formlayout">
+      <ventanas-usuario_registrado_listado_ventanas></ventanas-usuario_registrado_listado_ventanas>
+     </vaadin-form-layout>
+    </vaadin-panel>
+    <vaadin-button plain-text _id="atras">
+      Atrás 
+    </vaadin-button>
+   </vaadin-form-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>

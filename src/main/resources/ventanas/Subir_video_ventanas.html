@@ -1,0 +1,29 @@
+<!doctype html>
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <meta name="design-properties" content="{&quot;RULERS_VISIBLE&quot;:true,&quot;GUIDELINES_VISIBLE&quot;:false,&quot;SNAP_TO_OBJECTS&quot;:true,&quot;SNAP_TO_GRID&quot;:true,&quot;SNAPPING_DISTANCE&quot;:10,&quot;GENERATE_GETTERS&quot;:false,&quot;JAVA_SOURCES_ROOT&quot;:&quot;src/main/java&quot;,&quot;THEME&quot;:&quot;mytheme&quot;}">
+  <meta name="vaadin-version" content="8.0.5">
+  <meta name="package-mapping" content="ventanas:ventanas">
+ </head>
+ <body>
+  <vaadin-vertical-layout spacing="false" responsive size-full margin="false">
+   <vaadin-form-layout responsive size-auto margin :center>
+    <vaadin-label plain-text _id="titulo_subir_nuevo_video">
+      Subir Nuevo Video 
+    </vaadin-label>
+    <ventanas-anadir_datos_video_ventanas _id="anadirDatosVideo"></ventanas-anadir_datos_video_ventanas>
+    <vaadin-form-layout responsive size-auto margin="false">
+     <vaadin-horizontal-layout>
+      <vaadin-button plain-text _id="atras">
+        Atrás 
+      </vaadin-button>
+      <vaadin-button plain-text _id="subir_video">
+        Subir 
+      </vaadin-button>
+     </vaadin-horizontal-layout>
+    </vaadin-form-layout>
+   </vaadin-form-layout>
+  </vaadin-vertical-layout>
+ </body>
+</html>
